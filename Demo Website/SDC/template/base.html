@@ -1,0 +1,53 @@
+{% load static from staticfiles %}
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SDC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Bootstrap 4 -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+   <!--Fusion Chart-->
+   
+
+      <script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
+      <script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fint.js" %}"></script>
+</head>
+<body>
+
+<div class="container-fluid">    
+ <nav class="navbar navbar-expand-sm bg-primary navbar-light">
+
+<a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'farmer.png' %}" style="width:30px;height:30px;"></a>
+
+    <ul class="navbar-nav">
+
+        <li class="nav-item">
+
+             <a class="nav-link" href="{% url 'Rice' %}" ><b>RICE</b></a>
+
+        </li>
+        
+        <li class="nav-item">
+
+            <a class="nav-link" href="#"><b>CORN</b></a>
+   
+        </li> 
+
+    </ul>
+ </nav>
+ </div>
+
+ 
+
+
+ {% block content %}
+
+ {% endblock %}
+    
+</body>
+</html>

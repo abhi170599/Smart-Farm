@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+
+
+{% block content %}
+
+
+<div class="jumbotron text-center">
+
+<h1><b>Welcome to Smart Farm</b></h1>
+
+</div>
+
+<div class="conatiner text-center">
+
+
+        <p><b>Use the Intelligent prediction tools to plan your crops</b></p>
+
+
+
+</div>
+
+<div class="container text-center" style="padding:5%;">
+<div class="row">
+
+
+    <div class="col-sm-4">
+
+       <h3>Consumption</h3>
+
+       <span class="btn btn-default"><img src="{% static 'Consump.png' %}" style="width:200px;height:200px;"></span>
+
+
+    </div>
+
+    <div class="col-sm-4">
+
+        <h3>Price</h3>
+ 
+        <span class="btn btn-default"><img src="{% static 'Price.png' %}" style="width:200px;height:200px;"></span>
+ 
+ 
+     </div>
+
+     <div class="col-sm-4">
+
+        <h3>Production</h3>
+ 
+        <span class="btn btn-default"><img src="{% static 'product.png' %}" style="width:200px;height:200px;"></span>
+ 
+ 
+     </div>
+
+
+
+
+
+
+
+</div>
+</div>
+{% endblock %}
